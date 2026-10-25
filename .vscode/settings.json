@@ -1,0 +1,18 @@
+{
+  "jupyter.notebookFileRoot": "${fileDirname}",
+  "python.analysis.extraPaths": [
+    "teams/T3_Acoustic_Propagation/code",
+    "teams/T4_Tissue_Interaction/src",
+    "teams/T5_RX_Beamforming/src",
+    "teams/T6_Image_Reconstruction/src",
+    "teams/T7_B_mode/src",
+    "teams/T8_Post_Image_Processing/src",
+    "integration/01_ap_ti_relay",
+    "integration/02_full_relay",
+    "integration/03_full_pipeline"
+  ],
+  "python.terminal.activateEnvironment": true,
+  "python.testing.pytestEnabled": false,
+  "notebook.output.textLineLimit": 60,
+  "files.exclude": { "**/__pycache__": true, "**/.pytest_cache": true }
+}

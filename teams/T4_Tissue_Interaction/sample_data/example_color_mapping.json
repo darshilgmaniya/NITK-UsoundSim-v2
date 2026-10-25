@@ -1,0 +1,14 @@
+{
+  "spacing_mm": 0.1,
+  "colors": {
+    "#000000": "muscle",
+    "#ffdcb4": "skin",
+    "#ffff00": "fat",
+    "#c85050": "thyroid",
+    "#ff0000": "air",
+    "#ffffff": "vessel_wall",
+    "#0078ff": "blood",
+    "#00ffff": "tumor_hypoechoic",
+    "#ff00ff": "cyst_fluid"
+  }
+}

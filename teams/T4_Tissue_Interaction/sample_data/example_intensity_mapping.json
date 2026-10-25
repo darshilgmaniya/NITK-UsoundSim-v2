@@ -1,0 +1,14 @@
+{
+  "spacing_mm": 0.1,
+  "classes": [
+    "air",
+    "fat",
+    "cyst_fluid",
+    "thyroid",
+    "tumor_hypoechoic",
+    "blood",
+    "vessel_wall",
+    "muscle",
+    "skin"
+  ]
+}

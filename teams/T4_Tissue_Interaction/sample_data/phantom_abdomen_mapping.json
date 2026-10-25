@@ -1,0 +1,24 @@
+{
+  "spacing_mm": [
+    0.25,
+    0.25
+  ],
+  "labels": {
+    "0": "liver",
+    "1": "skin",
+    "2": "fat",
+    "3": "muscle",
+    "4": "bile",
+    "5": "vessel_wall",
+    "6": "blood",
+    "7": "bone",
+    "8": "kidney_cortex",
+    "9": "kidney_sinus",
+    "10": "kidney_medulla",
+    "11": "tumor_hypoechoic",
+    "12": "tumor_hyperechoic",
+    "13": "cyst_fluid",
+    "14": "bowel_gas",
+    "15": "contrast_agent"
+  }
+}

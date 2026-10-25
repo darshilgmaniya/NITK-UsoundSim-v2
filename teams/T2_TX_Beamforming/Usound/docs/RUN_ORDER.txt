@@ -1,0 +1,4 @@
+1. Edit config/transducer_interface.json if the Transducer team supplies actual values.
+2. Edit config/beamforming.json for focus/steering/sound speed.
+3. Run: python run_transmit_beamforming.py
+4. Give outputs/tx_beamforming_package.npz to Acoustic Propagation.

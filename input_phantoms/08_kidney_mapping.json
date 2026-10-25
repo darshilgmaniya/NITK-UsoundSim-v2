@@ -1,0 +1,12 @@
+{
+  "spacing_mm": [
+    0.08,
+    0.08
+  ],
+  "labels": {
+    "0": "fat",
+    "1": "kidney_cortex",
+    "2": "kidney_medulla",
+    "3": "kidney_sinus"
+  }
+}

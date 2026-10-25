@@ -1,0 +1,28 @@
+# Every key is optional; values shown are the defaults.
+# Get f0 / probe geometry from the Transducer team and F-number from Transmit/Receive BF.
+f0_hz: 3.5e6
+c0: 1540.0
+fs_hz: 40.0e6                  # only used by the built-in mock incident pulse
+fractional_bandwidth: 0.6
+f_number: 2.0
+pulse_cycles: 2.0
+
+scatterers_per_cell: 6.0       # speckle realism; >=10 is ideal but costs memory
+density_per_mm2: null          # set a number to override scatterers_per_cell
+max_scatterers: 30000          # budget for DIFFUSE scatterers (interface ones come on top)
+diffuse_ref_reflectivity: 0.01 # rms reflectivity per resolution cell, liver = 0 dB
+interface_gain: 1.0
+interface_spacing_over_lambda: 0.5
+specular_theta0_deg: 10.0      # width of the specular directivity lobe
+specular_floor: 0.10           # diffuse part of a rough boundary
+texture_strength: 0.25         # organ-scale echogenicity variation
+texture_corr_mm: 3.0
+prune_db: -60.0                # tissues with backscatter below this are anechoic
+path_model: full               # 'none' if Acoustic Propagation already applied attenuation + shadowing
+seed: 0
+
+probe:
+  name: generic_linear
+  geometry: linear             # linear | sector
+  apex_x_m: 0.0
+  apex_z_m: 0.0                # curvilinear: negative (apex behind the face), e.g. -0.05

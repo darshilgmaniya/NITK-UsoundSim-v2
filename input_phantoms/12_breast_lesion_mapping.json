@@ -1,0 +1,12 @@
+{
+  "spacing_mm": [
+    0.08,
+    0.08
+  ],
+  "labels": {
+    "0": "breast_glandular",
+    "1": "fat",
+    "2": "tumor_hypoechoic",
+    "3": "cyst_fluid"
+  }
+}

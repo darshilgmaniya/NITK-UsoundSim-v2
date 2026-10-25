@@ -1,0 +1,31 @@
+{
+  "about": "Sample input for run_team3.py (Team 3: Acoustic Propagation). Distances in metres, frequencies in Hz, speed in m/s.",
+  "run1_team_design": {
+    "about": "The team's own design. These values are read from code/nitk_usoundsim/config.py; they are listed here only so you can see them. run_team3.py checks that they match config.py.",
+    "n_elements": 128,
+    "f0_hz": 5000000.0,
+    "fs_hz": 40000000.0,
+    "c_m_per_s": 1540.0,
+    "alpha0_db_per_mhz_per_cm": 0.5,
+    "pitch": "lambda/2 = (1540 / 5e6) / 2 = 0.154 mm",
+    "scatterers": [
+      {"x": 0.000, "z": 0.010, "amp": 1.0},
+      {"x": 0.000, "z": 0.020, "amp": 1.0},
+      {"x": 0.000, "z": 0.030, "amp": 1.0}
+    ]
+  },
+  "run2_final_probe": {
+    "about": "The project's final probe (Philips L12-4 model). These values are passed as arguments to the team's functions; the team's code is not changed.",
+    "probe_name": "Philips L12-4 (project model)",
+    "n_elements": 128,
+    "pitch_m": 0.0003,
+    "f0_hz": 8000000.0,
+    "fs_hz": 40000000.0,
+    "scatterer": {"x": 0.000, "z": 0.020, "amp": 1.0},
+    "time_margin_fraction": 0.15
+  },
+  "attenuation_plot": {
+    "frequencies_hz": [4000000.0, 8000000.0, 12000000.0],
+    "max_depth_m": 0.06
+  }
+}

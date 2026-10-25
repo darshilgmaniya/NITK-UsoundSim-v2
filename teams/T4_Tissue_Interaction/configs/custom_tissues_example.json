@@ -1,0 +1,17 @@
+{
+  "body_part": "abdomen",
+  "spacing_mm": [0.25, 0.25],
+  "labels": {
+    "0": "coupling_gel",
+    "1": "skin",
+    "2": "fat",
+    "3": "muscle",
+    "4": "liver",
+    "5": {"name": "my_lesion", "base": "tumor_hypoechoic", "density": 1075, "speed": 1555, "backscatter_db": -8},
+    "6": {"name": "my_new_material", "density": 1040, "speed": 1535, "atten_db_cm_mhz": 0.8,
+          "atten_exp": 1.1, "backscatter_db": -3, "scatter_exp": 1.0, "kind": "lesion"}
+  },
+  "_colors_example": {"#ff0000": "liver", "0,0,255": "blood"},
+  "_ranges_example": [[0, 60, "water"], [60, 160, "liver"], [160, 256, "bone"]],
+  "_classes_example": ["fat", "liver", "bone"]
+}

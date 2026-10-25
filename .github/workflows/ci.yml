@@ -1,0 +1,33 @@
+name: tests
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "${{ matrix.python-version }}" }
+      - run: pip install -r requirements.txt
+      - name: Module 01 - Acoustic Propagation
+        run: cd teams/T3_Acoustic_Propagation/code && python -m pytest -q nitk_usoundsim
+      - name: Module 02 - Tissue Interaction
+        run: cd teams/T4_Tissue_Interaction && PYTHONPATH=src python -m pytest -q
+      - name: Integration 01 - AP + TI relay
+        run: cd integration/01_ap_ti_relay && python -m pytest -q
+      - name: T5 - Receive Beamforming
+        run: cd teams/T5_RX_Beamforming && python -m pytest -q tests
+      - name: Integration 02 - full relay
+        run: cd integration/02_full_relay && python -m pytest -q
+      - name: T6 - Image reconstruction
+        run: cd teams/T6_Image_Reconstruction && python -m pytest -q tests
+      - name: T7 - B-mode formation
+        run: cd teams/T7_B_mode && python -m pytest -q tests
+      - name: T8 - Scan conversion and post-processing
+        run: cd teams/T8_Post_Image_Processing && python -m pytest -q tests
+      - name: T2 - TX beamforming
+        run: cd teams/T2_TX_Beamforming/Usound && python -m pytest -q tests
+      - name: Integration 03 - full pipeline (phantom to final image)
+        run: cd integration/03_full_pipeline && python -m pytest -q

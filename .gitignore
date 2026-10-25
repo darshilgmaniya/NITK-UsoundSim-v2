@@ -1,0 +1,8 @@
+__pycache__/
+.pytest_cache/
+.venv/
+.ipynb_checkpoints/
+**/outputs/
+*.zip
+final_image_demo.*
+uploads/

@@ -1,0 +1,17 @@
+{
+  "spacing_mm": [
+    0.1,
+    0.1
+  ],
+  "labels": {
+    "0": "muscle",
+    "1": "skin",
+    "2": "fat",
+    "3": "thyroid",
+    "4": "air",
+    "5": "vessel_wall",
+    "6": "blood",
+    "7": "tumor_hypoechoic",
+    "8": "cyst_fluid"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run full pipeline (sample abdomen)",
+      "type": "shell",
+      "command": "python integration/03_full_pipeline/run_pipeline.py --source sample_abdomen --fit-aperture",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run all tests",
+      "type": "shell",
+      "command": "for d in integration/01_ap_ti_relay integration/02_full_relay integration/03_full_pipeline teams/T6_Image_Reconstruction teams/T7_B_mode teams/T8_Post_Image_Processing; do (cd $d && python -m pytest -q); done",
+      "problemMatcher": []
+    }
+  ]
+}

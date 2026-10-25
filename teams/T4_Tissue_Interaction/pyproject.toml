@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tissue-interaction"
+version = "0.2.0"
+description = "NITK-UsoundSim Subtask 04: Tissue Interaction module (phantom -> reflected/scattered ultrasound pressure)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = ["numpy>=1.23", "scipy>=1.9", "matplotlib>=3.6", "pillow>=9.0", "pyyaml>=6.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+notebook = ["jupyter", "nbformat"]
+
+[project.scripts]
+tissue-interaction = "tissue_interaction.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::UserWarning"]

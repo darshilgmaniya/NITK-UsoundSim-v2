@@ -1,0 +1,1 @@
+{"probe_name":"Philips L12-4 reference model","n_elements":128,"pitch_m":0.00030,"frequency_min_hz":4000000.0,"frequency_max_hz":12000000.0,"center_frequency_hz":8000000.0,"element_width_m":null,"element_height_m":null,"material":"PZT-5H","notes":"Pitch and centre frequency are editable simulation assumptions unless supplied by the project/transducer team."}

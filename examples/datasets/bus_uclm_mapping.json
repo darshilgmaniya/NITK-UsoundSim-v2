@@ -1,0 +1,8 @@
+{
+  "spacing_mm": 0.1,
+  "colors": {
+    "#000000": "breast_glandular",
+    "#00ff00": "tumor_hypoechoic",
+    "#ff0000": "tumor_hypoechoic"
+  }
+}

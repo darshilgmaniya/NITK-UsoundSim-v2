@@ -1,0 +1,18 @@
+{
+  "spacing_mm": [
+    0.15,
+    0.15
+  ],
+  "labels": {
+    "0": "liver",
+    "1": "water",
+    "2": "tumor_hypoechoic",
+    "3": "tumor_hyperechoic",
+    "4": "contrast_agent",
+    "5": "blood",
+    "6": "bowel_gas",
+    "7": "bone",
+    "8": "calcification",
+    "9": "fat"
+  }
+}

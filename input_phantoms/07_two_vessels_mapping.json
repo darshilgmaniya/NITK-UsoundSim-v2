@@ -1,0 +1,11 @@
+{
+  "spacing_mm": [
+    0.08,
+    0.08
+  ],
+  "labels": {
+    "0": "muscle",
+    "1": "vessel_wall",
+    "2": "blood"
+  }
+}

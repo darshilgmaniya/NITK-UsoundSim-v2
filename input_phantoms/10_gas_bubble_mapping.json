@@ -1,0 +1,11 @@
+{
+  "spacing_mm": [
+    0.08,
+    0.08
+  ],
+  "labels": {
+    "0": "liver",
+    "1": "bowel_gas",
+    "2": "cyst_fluid"
+  }
+}
